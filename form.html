@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="borrow">
+      <div class="card">
+        <img class="bookImg" />
+        <p class="bookDesc"></p>
+      </div>
+
+      <form>
+        <h2>Borrow Request</h2>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <button>Submit</button>
+        <a class="return" href="index.html"> Back </a>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        params = new URLSearchParams(window.location.search);
+        console.log(params);
+        img = params.get("img");
+        desc = params.get("desc");
+        $(".bookImg").attr("src", img);
+        $(".bookDesc").text(desc);
+      });
+    </script>
+  </body>
+</html>
