@@ -28,7 +28,7 @@
       <div class="side-bar">
         <div class="title-row">
           <h3 class="side-bar-title">List Of Books</h3>
-          <button  class="icon">
+          <button class="icon">
             <i class="fa fa-chevron-down"></i>
           </button>
         </div>
@@ -46,89 +46,130 @@
         <div class="heading">
           <h1>Available Books</h1>
         </div>
-        <div class="gallery">
-          <div class="gallery-item">
-            <div class="img-box">
-              <img src="HP1.jpg" width="183px" height="275" alt="Books" />
-              <div class="back">Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+        <div class="container">
+          <div class="gallery">
+            <div class="gallery-item">
+              <div class="img-box">
+                <img src="HP1.jpg" width="183px" height="275" alt="Books" />
+                <div class="back">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+                </div>
               </div>
+              <a href="" class="btn">Borrow Now</a>
             </div>
-            <a href="form.html" class="btn" target="_blank">Borrow Now</a>
-          </div>
-          <div class="gallery-item">
-            <div class="img-box">
-              <img src="HP 2.jpeg" width="183px" height="275" alt="Books" />
-              <div class="back">Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+            <div class="gallery-item">
+              <div class="img-box">
+                <img src="HP 2.jpeg" width="183px" height="275" alt="Books" />
+                <div class="back">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+                </div>
               </div>
+              <a href="form.html" class="btn" target="_blank">Borrow Now</a>
             </div>
-            <a href="form.html" class="btn" target="_blank">Borrow Now</a>
-          </div>
-          <div class="gallery-item">
-            <div class="img-box">
-              <img src="HP 3.jpeg" width="183px" height="275" alt="Books" />
-              <div class="back">Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+            <div class="gallery-item">
+              <div class="img-box">
+                <img src="HP 3.jpeg" width="183px" height="275" alt="Books" />
+                <div class="back">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+                </div>
               </div>
+              <a href="form.html" class="btn" target="_blank">Borrow Now</a>
             </div>
-            <a href="form.html" class="btn" target="_blank">Borrow Now</a>
-          </div>
-          <div class="gallery-item">
-            <div class="img-box">
-              <img src="HP1.jpg" width="183px" height="275" alt="Books" />
-              <div class="back">Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+            <div class="gallery-item">
+              <div class="img-box">
+                <img src="HP1.jpg" width="183px" height="275" alt="Books" />
+                <div class="back">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+                </div>
               </div>
+              <a href="form.html" class="btn" target="_blank">Borrow Now</a>
             </div>
-            <a href="form.html" class="btn" target="_blank">Borrow Now</a>
-          </div>
-          <div class="gallery-item">
-            <div class="img-box">
-              <img src="HP 2.jpeg" width="183px" height="275" alt="Books" />
-              <div class="back">Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+            <div class="gallery-item">
+              <div class="img-box">
+                <img src="HP 2.jpeg" width="183px" height="275" alt="Books" />
+                <div class="back">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+                </div>
               </div>
+              <a href="form.html" class="btn" target="_blank">Borrow Now</a>
             </div>
-            <a href="form.html" class="btn" target="_blank">Borrow Now</a>
-          </div>
-          <div class="gallery-item">
-            <div class="img-box">
-              <img src="HP 3.jpeg" width="183px" height="275" alt="Books" />
-              <div class="back">Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+            <div class="gallery-item">
+              <div class="img-box">
+                <img src="HP 3.jpeg" width="183px" height="275" alt="Books" />
+                <div class="back">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+                </div>
               </div>
+              <a href="form.html" class="btn" target="_blank">Borrow Now</a>
             </div>
-            <a href="form.html" class="btn" target="_blank">Borrow Now</a>
-          </div>
-          <div class="gallery-item">
-            <div class="img-box">
-              <img src="HP1.jpg" width="183px" height="275" alt="Books" />
-              <div class="back">Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+            <div class="gallery-item">
+              <div class="img-box">
+                <img src="HP1.jpg" width="183px" height="275" alt="Books" />
+                <div class="back">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+                </div>
               </div>
+              <a href="form.html" class="btn" target="_blank">Borrow Now</a>
             </div>
-            <a href="form.html" class="btn" target="_blank">Borrow Now</a>
-          </div>
-          <div class="gallery-item">
-            <div class="img-box">
-              <img src="HP 2.jpeg" width="183px" height="275" alt="Books" />
-              <div class="back">Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+            <div class="gallery-item">
+              <div class="img-box">
+                <img src="HP 2.jpeg" width="183px" height="275" alt="Books" />
+                <div class="back">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. nemo.
+                </div>
               </div>
+              <a href="form.html" class="btn" target="_blank">Borrow Now</a>
             </div>
-            <a href="form.html" class="btn" target="_blank">Borrow Now</a>
           </div>
+          <div class="side-page hidden"></div>
         </div>
       </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-      $(document).ready(function () {
-        $(".nav-icon").on("click", function (e) {
-          $(".nav-links").toggleClass("show");
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector(".nav-icon")
+          .addEventListener("click", function () {
+            document.querySelector(".nav-links").classList.toggle("show");
+          });
+        document.querySelector(".icon").addEventListener("click", function () {
+          document.querySelector(".list-of-books").classList.toggle("show");
         });
-        $(".icon").on("click", function (e) {
-          $(".list-of-books").toggleClass("show");
-        });
-        $(".btn").on("click", function (e) {
-          card = $(this).closest(".gallery-item");
-          img = card.find("img").attr("src");
-          desc = card.find(".back").text();
-          url = `form.html?img=${encodeURIComponent(img)}&desc=${encodeURIComponent(desc)}`;
-          window.location.href = url;
+        const buttons = document.querySelectorAll(".btn");
+
+        buttons.forEach(function (btn) {
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            const card = this.closest(".gallery-item");
+            const img = card.querySelector("img").getAttribute("src");
+            const desc = card.querySelector(".back").textContent;
+            const sidePage = document.querySelector(".side-page");
+            sidePage.classList.remove("hidden");
+            sidePage.innerHTML = "";
+
+            const heading = document.createElement("h2");
+            heading.textContent = "Borrow";
+            heading.classList.add("borrow-heading");
+            const closeButton = document.createElement("button");
+            closeButton.classList.add("close");
+            closeButton.textContent = "Close";
+
+            closeButton.addEventListener("click", function () {
+              sidePage.innerHTML = "";
+              sidePage.classList.add("hidden");
+            });
+            const image = document.createElement("img");
+            image.src = img;
+            image.classList.add("borrow-img");
+            image.style.width = "150px";
+            const para = document.createElement("p");
+            para.textContent = desc;
+            sidePage.appendChild(heading);
+            sidePage.appendChild(closeButton);
+            sidePage.appendChild(image);
+            sidePage.appendChild(para);
+          });
         });
       });
     </script>
