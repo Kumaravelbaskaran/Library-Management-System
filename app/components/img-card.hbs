@@ -1,0 +1,13 @@
+<div class="gallery-item">
+    <div class="img-box">
+     <img src="{{@book.img}}" width="183px" height="275" alt="Books" />
+      <div class="back">
+         {{@book.desc}}
+          </div>
+    </div>
+      <button type="button" {{on "click" (fn this.cart.insertBook @book.id)}} >Add to cart</button>
+      {{#if this.isSelected}}
+       <button type="button" {{on "click" (fn this.cart.removeBook @book.id)}} >Remove from cart</button>
+       Current Count : {{this.count}}
+      {{/if}}
+ </div>

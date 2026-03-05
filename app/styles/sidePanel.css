@@ -1,0 +1,19 @@
+.side-panel{
+   background-color: rgb(168, 245, 168);
+  display: flex;
+  flex: 0 0 220px;
+  flex-direction: column;
+  align-items: start;
+}
+
+.side-panel-title{
+  display: inline-block;
+  margin: 20px;
+  border-bottom: 2px solid green;
+}
+.list-of-books{
+  list-style: none;
+}
+.list-of-books li{
+  margin-bottom: 15px;
+}

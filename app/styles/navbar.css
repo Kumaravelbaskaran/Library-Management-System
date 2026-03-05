@@ -1,0 +1,30 @@
+.nav-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgreen;
+}
+.nav-links{
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.nav-links li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.sign-up{
+  margin-right: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: green;
+  color: white;
+
+}
+.title{
+  margin-left: 20px;
+  text-decoration: none;
+  font-style: italic;
+
+}

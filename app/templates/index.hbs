@@ -1,0 +1,8 @@
+<div class="main-content">
+  <SidePanel />
+  <div class="gallery-box">
+    {{#each this.model as |book|}}
+      <ImgCard @book={{book}}  />
+     {{/each}}
+  </div>
+</div>

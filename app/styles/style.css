@@ -1,0 +1,29 @@
+.main-content{
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-box{
+  margin: 1.2em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 3;
+  gap: 3em;
+}
+.gallery-item{
+  height: fit-content;
+  width: 200px;
+  padding: 0.4em;
+  border: 2px solid green;
+  border-radius: 4px;
+}
+.img-box {
+  position: relative;
+  overflow: hidden;
+}
+.img-box img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
