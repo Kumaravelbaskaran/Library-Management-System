@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .main{
+    margin: 200px;
+    padding: 20px;
+     width: 250px;
+     height: auto;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px 20px;
+     background-color: greenyellow;
+     justify-content: space-between;
+     border: 2px solid green;
+     border-radius: 5px;
+}
+input[type="text"]{
+    border-radius: 5px;
+    font-size: 20px;
+}
+.display{
+    display: block;
+    flex-basis:100% ;
+    height: 80px;
+}
+.all-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+.btn{
+    padding: 25px;
+    border: 2px solid black;
+    font-size: 20px;
+    
+}
+.btn:last-child{
+    align-self: end;
+    flex-basis: 64%;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+      <input type="text" class="display" />
+      <div class="all-buttons">
+        <button class="btn minus">+</button>
+        <button class="btn plus">-</button>
+        <button class="btn equals">=</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">0</button>
+        <button class="btn reset">Clear</button>
+      </div>
+    </div>
+    <script>
+      let temp = "";
+      let num1, num2, op;
+      let isResult = false;
+      const display = document.querySelector(".display");
+      const all = document.querySelector(".all-buttons");
+      const plus = document.querySelector(".plus");
+      const minus = document.querySelector(".minus");
+      const equals = document.querySelector(".equals");
+      const clear = document.querySelector(".reset");
+      all.addEventListener("click", (e) => {
+        if (e.target != plus && e.target != minus && e.target != equals) {
+          if (isResult) {
+            display.value = "";
+            temp="";
+            isResult = false;
+          }
+          temp += e.target.textContent;
+          display.value = temp;
+        } else if (e.target === plus || e.target === minus) {
+          num1 = Number(display.value);
+          temp = "";
+          display.value = e.target.textContent;
+          op = e.target.textContent;
+        } else {
+          isResult = true;
+          num2 = Number(display.value);
+          display.value = op === "+" ? num1 + num2 : num1 - num2;
+        }
+        if (e.target === all) display.value = "";
+      });
+      clear.addEventListener("click", (e) => {
+        e.stopPropagation();
+        temp = "";
+        ((num1 = 0), (num2 = 0));
+        display.value = "";
+
+      });
+    </script>
+</body>
+</html>
