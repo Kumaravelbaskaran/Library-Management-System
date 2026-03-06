@@ -17,9 +17,8 @@ export default class CartService extends Service {
     removeBook = (id) => {
     let updated = new Map(this.selectedBooks);
     updated.set(id, updated.get(id) - 1);
-
     this.selectedBooks = updated;
-  };
+  }
     isSelectedinMap(id) {
     return this.selectedBooks.has(id) && this.selectedBooks.get(id) > 0;
   }

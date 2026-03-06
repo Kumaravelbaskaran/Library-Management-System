@@ -1,0 +1,11 @@
+.wrapper{
+    display: flex;
+}
+.chech-out-img{
+   width: 200px;
+   padding: 10px;
+    object-fit: cover;
+    margin: 50px;
+    border: 2px solid green;
+    text-align: center;
+}

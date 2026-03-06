@@ -27,3 +27,11 @@
   display: block;
   transition: opacity 0.3s ease;
 }
+button{
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: green;
+  color: white;
+  margin-top: 10px;
+}

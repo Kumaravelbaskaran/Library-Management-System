@@ -8,6 +8,6 @@
       <button type="button" {{on "click" (fn this.cart.insertBook @book.id)}} >Add to cart</button>
       {{#if this.isSelected}}
        <button type="button" {{on "click" (fn this.cart.removeBook @book.id)}} >Remove from cart</button>
-       Current Count : {{this.count}}
+       <p>Current Count : {{this.count}}</p>
       {{/if}}
  </div>

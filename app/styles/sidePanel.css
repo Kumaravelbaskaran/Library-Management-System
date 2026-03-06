@@ -17,3 +17,13 @@
 .list-of-books li{
   margin-bottom: 15px;
 }
+
+.check-out-link{
+  text-decoration: none;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: green;
+  color: white;
+}

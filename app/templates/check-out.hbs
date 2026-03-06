@@ -1,0 +1,14 @@
+{{page-title "CheckOut"}}
+<div class="check-out">
+  <h2 class="check-out-title">Check Out</h2>
+<div class="wrapper">
+{{#each this.cartItems as |item|}}
+<div class="chech-out-img">
+     <img src={{item.img}} width="183" height="275" alt="" />
+      <h3>Selected count : {{item.count}}</h3>
+      <h4>{{item.desc}}</h4>
+
+</div>
+{{/each}}
+</div>
+</div>
